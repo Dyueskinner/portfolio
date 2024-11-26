@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -24,7 +25,17 @@ const Navbar = () => {
             {/* desktop nav */}
             <ul className="hidden md:flex font-josefin text-lg font-bold">
                 {navItems.map(item => (
-                    <li key={item.id} className="p-4 cursor-pointer hover:text-[#FFAE00]">{item.text}</li>
+                    <motion.li 
+                    key={item.id}
+                    className="p-4 cursor-pointer"
+                    whileHover={{
+                      scale: 1.2,
+                      color: "#FFAE00",
+                      transition: { type: "spring", stiffness: 300},
+                    }}
+                    >
+                      {item.text}
+                    </motion.li>
                 ))}
             </ul>
 
