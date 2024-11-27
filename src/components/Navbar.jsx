@@ -18,7 +18,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="bg-[#1C1C1C] bg-opacity-30 flex justify-between items-end h-18 max-w mx-auto px-10 text-white font-josefin">
+        <div className="bg-[#1C1C1C] bg-opacity-30 flex justify-between items-end h-18 max-w mx-auto px-10 text-white font-josefin sticky top-0">
             {/* Logo */}
             <h1 className="w-full p-2 m-1 text-3xl font-bold text-[#FFAE00]">DYS</h1>
 
