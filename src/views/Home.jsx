@@ -4,9 +4,10 @@ import SamplePicture from '../assets/sample_image.jpg';
 const Home = () => {
     return (
         <>
-        {/* cta text  */}
-            <div className="flex justify-between items-center bg-[#242424] font-josefin p-56">
-                <div className='sm:text-center lg:text-left ms-16'>
+            <div className="flex justify-between items-center bg-[#242424] font-josefin w-3/4 mx-auto pt-36 ps-8">
+                
+                {/* cta text  */}
+                <div className=' sm:text-center lg:text-left px-4 sm:px-0'>
                     <p className=" text-white text-[24px] font-normal">
                         Hey there,
                     </p>
@@ -37,9 +38,14 @@ const Home = () => {
                 </div>
 
                 {/* cta img & icons  */}
-                <div className="hidden lg:block">
-                    <img src={ SamplePicture} alt="sample" className='h-[450px] w-[450px] rounded-full me-16 border-solid border-[#FFAE00] border-4' />
+                <div className='hidden lg:block pe-36'>
+                <img 
+                    src={SamplePicture} 
+                    alt="sample" 
+                    className="rounded-full border-solid border-[#FFAE00] border-4 lg:w-[421px] aspect-square object-cover"
+                />
                 </div>
+
             </div>
         </>
     )
