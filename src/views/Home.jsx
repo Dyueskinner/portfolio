@@ -1,5 +1,6 @@
 import { TypeAnimation } from 'react-type-animation'
 import SamplePicture from '../assets/sample_image.jpg';
+import { socialLinks } from '../constants'
 
 const Home = () => {
     return (
@@ -37,7 +38,7 @@ const Home = () => {
 
                 {/* buttons */}
                 <div className='mt-6 flex'>
-                    
+
                     {/* project button  */}
                     <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white mr-4 hover:bg-[#FFAE00]'>Projects</button>
 
@@ -54,6 +55,17 @@ const Home = () => {
                     alt="sample" 
                     className="rounded-full border-solid border-[#FFAE00] border-4 lg:w-[421px] aspect-square object-cover"
                 />
+
+                {/* social links  */}
+                <div className='text-center mt-4'>
+                    {socialLinks.map((icons) => (
+                    <a href={icons.link}>
+                            <icons.Icon sx={{ color: '#FFAE00', fontSize: 40}} className='hover:text-white mr-1' />
+                        </a>
+                    ))
+                
+                }      
+                </div>
             </div>
         </div>
             
