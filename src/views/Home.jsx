@@ -35,18 +35,28 @@ const Home = () => {
                         I am a second year Web Programming student at NSCC <br/> focusing on building a career as a Frontend/Fullstack <br/>Developer.
                     </p>
 
-                </div>
+                {/* buttons */}
+                <div className='mt-6 flex'>
+                    
+                    {/* project button  */}
+                    <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white mr-4 hover:bg-[#FFAE00]'>Projects</button>
 
-                {/* cta img & icons  */}
-                <div className='hidden lg:block pe-36'>
+                    {/* resume button  */}
+                    <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white hover:bg-[#FFAE00]'>Resume</button>
+                </div>
+            </div>
+
+
+            {/* cta img & icons  */}
+            <div className='hidden lg:block pe-36'>
                 <img 
                     src={SamplePicture} 
                     alt="sample" 
                     className="rounded-full border-solid border-[#FFAE00] border-4 lg:w-[421px] aspect-square object-cover"
                 />
-                </div>
-
             </div>
+        </div>
+            
         </>
     )
 }
