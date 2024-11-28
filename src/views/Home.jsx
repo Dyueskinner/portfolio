@@ -5,10 +5,10 @@ import { socialLinks } from '../constants'
 const Home = () => {
     return (
         <>
-            <div className="flex justify-between items-center bg-[#242424] font-josefin w-3/4 mx-auto pt-36 ps-8">
+            <div className="flex justify-between gap-36 items-center bg-[#242424] font-josefin w-full mx-auto pt-36 ps-24 pb-11 pe-12">
                 
                 {/* cta text  */}
-                <div className=' sm:text-center lg:text-left px-4 sm:px-0'>
+                <div className=' sm:text-center lg:text-left px-6 sm:px-0'>
                     <p className=" text-white text-[24px] font-normal">
                         Hey there,
                     </p>
@@ -49,7 +49,7 @@ const Home = () => {
 
 
             {/* cta img & icons  */}
-            <div className='hidden lg:block pe-36'>
+            <div className='hidden lg:block pe-18'>
                 <img 
                     src={SamplePicture} 
                     alt="sample" 
@@ -58,8 +58,8 @@ const Home = () => {
 
                 {/* social links  */}
                 <div className='text-center mt-4'>
-                    {socialLinks.map((icons) => (
-                    <a href={icons.link}>
+                    {socialLinks.map((icons, index) => (
+                    <a href={icons.link} key={index}>
                             <icons.Icon sx={{ color: '#FFAE00', fontSize: 40}} className='hover:text-white mr-1' />
                         </a>
                     ))
