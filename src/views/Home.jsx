@@ -7,24 +7,25 @@ const Home = () => {
     return (
         <>
             <section id="home">
-            <div className="flex justify-between gap-36 items-center bg-[#242424] font-josefin w-full mx-auto pt-36 ps-32 xl:pb-52 pe-12">
+            <div className="flex items-center bg-[#242424] font-josefin w-full mx-auto pt-36 ps-36 xl:pb-52 pe-12">
                 
                 {/* cta text  */}
                 <Fade 
                 duration={1500}
                 direction='left'
                 >
-                <div className=' sm:text-center lg:text-left px-6 sm:px-0 xl:ps-36 '>
+                <div className=' sm:text-center lg:text-left px-6 sm:px-0 lg:ps-20 lg:pe-12 '>
                     <p className=" text-white text-[24px] font-normal">
                         Hey there,
                     </p>
 
-                    <h1 className="text-white text-[50px] font-bold">
+                    <h1 className="text-white text-[45px] font-bold">
                         I am Dominique
                     </h1>
 
-                    <h1 className="text-white text-[50px] font-bold">
+                    <h1 className="text-white text-[45px] font-bold">
                         Aspiring
+                        <br/>
                         <TypeAnimation className='text-[#FFAE00] font-bold' 
                             sequence={[
                                 ' Frontend Developer',
@@ -39,7 +40,7 @@ const Home = () => {
                     </h1>
 
                     <p className="text-white text-2xl font-normal">
-                        I am a second year Web Programming student at NSCC <br/> focusing on building a career as a Frontend/Fullstack <br/>Developer.
+                        I am a second year Web Programming student at NSCC, <br/> focusing on building a career as a Frontend/Fullstack <br/>Developer.
                     </p>
 
                 {/* buttons */}
@@ -60,7 +61,7 @@ const Home = () => {
             duration={1500}
             direction='right'
             >
-            <div className='hidden lg:block pe-18 xl:pe-60'>
+            <div className='hidden lg:block ps-18 pe-18 xl:pe-60'>
                 <img 
                     src={SamplePicture} 
                     alt="sample" 
