@@ -7,19 +7,19 @@ const About = () => {
     return (
         <>
         <section id="about">
-            <div className="flex flex-col lg:flex-row justify-between items-center bg-[#1A1A1A] font-josefin w-full mx-auto xl:pt-24 lg:ps-8 xl:ps-72 ">
+            <div className="flex items-center bg-[#1A1A1A] font-josefin xl:pt-24 lg:ps-8 xl:ps-40 ">
                 {/* About image */}
-                <div className="lg:w-1/2 flex flex-col justify-center lg:justify-end xl:pe-0 mt-6 ">
+                <div className="flex justify-center xl:pe-0 mt-6 ">
                     <img 
                         src={SamplePicture} 
                         alt="sample" 
-                        className="border-solid border-[#FFAE00] border-4 lg:w-[500px] lg:h-[350px] xl:w-[500px] xl:h-[400px] object-cover" 
+                        className="border-solid border-[#FFAE00] border-4 w-[600px] h-[350px] object-cover" 
                     />
                 </div>
                 
                 {/* About me text */}
                 
-                <div className="lg:w-full sm:text-center lg:text-left sm:px-0 ms-0 lg:ms-12 xl:pe-48 xl:ps-36">
+                <div className="lg:w-3/4 sm:text-center lg:text-left sm:px-0 ms-0 lg:ms-12 xl:pe-24 lg:ps-18">
                     <p className="text-[#FFAE00] text-[24px] font-normal underline underline-offset-4">
                         About Me
                     </p>
@@ -32,7 +32,7 @@ const About = () => {
                         Web Development
                     </h1>
 
-                    <p className="text-white text-lg font-normal xl:pe-40 xl:text-2xl">
+                    <p className="text-white text-lg font-normal xl:pe-24 xl:text-xl">
                         I am currently a second-year Web Programming student at the NSCC IT Campus. My journey into web development began with creating websites on WordPress, but I quickly decided to take my skills to the next level by enrolling in the Web Programming program.<br/><br/>
                         I have a strong interest in Front-End Development, Full-Stack Development, and UI/UX Design, and I’m excited to expand my knowledge in these areas. One of my key goals is to write clean, efficient, and reusable code that enhances the overall user experience on the web, making it as seamless and enjoyable as possible.
                     </p>
