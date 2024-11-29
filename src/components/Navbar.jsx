@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -11,10 +12,10 @@ const Navbar = () => {
 
     //array for nav items
     const navItems = [
-        {id: 1, text: 'HOME'},
-        {id: 2, text: 'ABOUT'},
-        {id: 3, text: 'PROJECTS'},
-        {id: 4, text: 'CONTACT'}
+        {id: 1, text: 'HOME', to:"home"},
+        {id: 2, text: 'ABOUT', to:"about"},
+        {id: 3, text: 'PROJECTS', to:"projects"},
+        {id: 4, text: 'CONTACT', to:"contact"}
     ];
 
     return (
@@ -34,7 +35,9 @@ const Navbar = () => {
                       transition: { type: "spring", stiffness: 300},
                     }}
                     >
+                      <Link to={item.to} smooth={true} duration={500}>
                       {item.text}
+                      </Link>
                     </motion.li>
                 ))}
             </ul>

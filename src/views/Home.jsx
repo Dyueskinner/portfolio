@@ -5,6 +5,7 @@ import { socialLinks } from '../constants'
 const Home = () => {
     return (
         <>
+            <section id="home">
             <div className="flex justify-between gap-36 items-center bg-[#242424] font-josefin w-full mx-auto pt-36 ps-32 xl:pb-52 pe-12">
                 
                 {/* cta text  */}
@@ -68,7 +69,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-            
+            </section>
         </>
     )
 }

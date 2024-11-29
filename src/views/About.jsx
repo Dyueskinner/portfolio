@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 const About = () => {
     return (
         <>
+        <section id="about">
             <div className="flex flex-col lg:flex-row justify-between items-center bg-[#1A1A1A] font-josefin w-full mx-auto xl:pt-24 lg:ps-8 xl:ps-72 ">
                 {/* About image */}
                 <div className="lg:w-1/2 flex flex-col justify-center lg:justify-end xl:pe-0 mt-6 ">
@@ -72,6 +73,7 @@ const About = () => {
             ))};
         </div>
         </div>
+        </section>
         </>
     );
 };
