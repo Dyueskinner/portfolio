@@ -69,7 +69,7 @@ const About = () => {
             <img
               src={tech.url}
               alt={tech.name}
-              className="w-9 h-9 object-contain"
+              className="w-12 h-12 object-contain"
               />
             <p className="text-white text-xl">{tech.name}</p>
           </motion.div>
