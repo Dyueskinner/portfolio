@@ -1,6 +1,7 @@
 import SamplePicture from '../assets/sample_image.jpg'
 import { techStack } from '../constants';
 import { motion } from 'framer-motion';
+// import { Fade } from 'react-awesome-reveal';
 
 const About = () => {
     return (
@@ -17,7 +18,8 @@ const About = () => {
                 </div>
                 
                 {/* About me text */}
-                <div className="lg:w-full sm:text-center lg:text-left sm:px-0 ms-0 lg:ms-12 xl:pe-48 xl:ps-24">
+                
+                <div className="lg:w-full sm:text-center lg:text-left sm:px-0 ms-0 lg:ms-12 xl:pe-48 xl:ps-36">
                     <p className="text-[#FFAE00] text-[24px] font-normal underline underline-offset-4">
                         About Me
                     </p>
@@ -36,6 +38,7 @@ const About = () => {
                     </p>
                 </div>
                 
+               
             </div>
 
     {/* tools and tech title  */}
