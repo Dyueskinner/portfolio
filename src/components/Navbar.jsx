@@ -35,7 +35,7 @@ const Navbar = () => {
                       transition: { type: "spring", stiffness: 300},
                     }}
                     >
-                      <Link to={item.to} smooth={true} duration={500}>
+                      <Link to={item.to} smooth={true} duration={1000}>
                       {item.text}
                       </Link>
                     </motion.li>

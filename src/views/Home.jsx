@@ -1,6 +1,7 @@
 import { TypeAnimation } from 'react-type-animation'
 import SamplePicture from '../assets/sample_image.jpg';
 import { socialLinks } from '../constants'
+import { Fade } from 'react-awesome-reveal'
 
 const Home = () => {
     return (
@@ -9,7 +10,11 @@ const Home = () => {
             <div className="flex justify-between gap-36 items-center bg-[#242424] font-josefin w-full mx-auto pt-36 ps-32 xl:pb-52 pe-12">
                 
                 {/* cta text  */}
-                <div className=' sm:text-center lg:text-left px-6 sm:px-0 xl:ps-36'>
+                <Fade 
+                duration={1500}
+                direction='left'
+                >
+                <div className=' sm:text-center lg:text-left px-6 sm:px-0 xl:ps-36 '>
                     <p className=" text-white text-[24px] font-normal">
                         Hey there,
                     </p>
@@ -47,9 +52,14 @@ const Home = () => {
                     <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white hover:bg-[#FFAE00]'>Resume</button>
                 </div>
             </div>
+            </Fade>
 
 
             {/* cta img & icons  */}
+            <Fade
+            duration={1500}
+            direction='right'
+            >
             <div className='hidden lg:block pe-18 xl:pe-60'>
                 <img 
                     src={SamplePicture} 
@@ -68,6 +78,7 @@ const Home = () => {
                 }      
                 </div>
             </div>
+            </Fade>
         </div>
             </section>
         </>
