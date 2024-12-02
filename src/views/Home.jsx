@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <section id="home">
-            <div className="flex items-center bg-[#242424] font-josefin w-full mx-auto pt-36 ps-36 xl:pb-52 pe-12">
+            <div className="flex items-center bg-[#242424] font-josefin w-full mx-auto pt-36 ps-44 xl:pb-52 pe-12">
                 
                 {/* cta text  */}
                 <Fade 
