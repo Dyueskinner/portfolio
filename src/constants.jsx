@@ -2,7 +2,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GithubIcon from '@mui/icons-material/GitHub'
 
 export const socialLinks = [
-    {name: "LinkedIn", Icon: LinkedInIcon, link:"https://www.linkedin.com/dyueskinner",},
+    {name: "LinkedIn", Icon: LinkedInIcon, link:"www.linkedin.com/in/dyueskinner",},
     {name: "Github", Icon: GithubIcon, link:"https://www.github.com/dyueskinner",}
 ]
 
