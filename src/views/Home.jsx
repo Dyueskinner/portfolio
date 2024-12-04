@@ -72,7 +72,7 @@ const Home = () => {
                 <div className='text-center mt-4'>
                     {socialLinks.map((icons, index) => (
                     <a href={icons.link} key={index}>
-                            <icons.Icon sx={{ color: '#FFAE00', fontSize: 40}} className='hover:text-white mr-1' target="_blank" />
+                            <icons.Icon sx={{ color: '#FFAE00', fontSize: 40}} className='hover:text-white mr-1' />
                         </a>
                     ))
                 
