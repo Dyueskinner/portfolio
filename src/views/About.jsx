@@ -9,7 +9,7 @@ const About = () => {
         <section id="about">
             <div className="flex items-center bg-[#1A1A1A] font-josefin xl:pt-24 lg:ps-8 xl:ps-40 ">
                 {/* About image */}
-                <div className="flex justify-center xl:pe-0 mt-6 ">
+                <div className="hidden lg:flex justify-center xl:pe-0 mt-6 ">
                     <img 
                         src={SamplePicture} 
                         alt="sample" 
@@ -19,16 +19,16 @@ const About = () => {
                 
                 {/* About me text */}
                 
-                <div className="lg:w-3/4 sm:text-center lg:text-left sm:px-0 ms-0 lg:ms-12 xl:pe-24 lg:ps-18">
-                    <p className="text-[#FFAE00] text-[24px] font-normal underline underline-offset-4">
+                <div className="px-16 lg:w-3/4 sm:text-center lg:text-left sm:px-0 ms-0 lg:ms-12 xl:pe-24 lg:ps-18">
+                    <p className="text-center text-[#FFAE00] text-[24px] font-normal underline underline-offset-4">
                         About Me
                     </p>
 
-                    <h1 className="text-white text-[50px] font-bold">
+                    <h1 className=" text-[40px] text-white lg:text-[50px] font-bold">
                         My Journey into
                     </h1>
 
-                    <h1 className="text-[#FFAE00] text-[50px] font-bold">
+                    <h1 className=" text-[40px] text-[#FFAE00] lg:text-[50px] font-bold">
                         Web Development
                     </h1>
 
@@ -43,13 +43,13 @@ const About = () => {
 
     {/* tools and tech title  */}
         <div>
-            <p className='text-[24px] xl:text-center text-[#FFAE00] underline underline-offset-4 font-josefin bg-[#1a1a1a]  pb-4 xl:pt-5'>
+            <p className='text-[24px] text-center lg:text-center text-[#FFAE00] underline underline-offset-4 font-josefin bg-[#1a1a1a]  pb-4 xl:pt-5'>
                 Tools and Technologies 
             </p>
         </div>
     {/* tech stack links */}
     <div className='flex bg-[#1a1a1a] items-center justify-center '>
-    <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin  text-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin  text-center">
         {techStack.map((tech) => (
             <motion.div 
             initial="hidden"

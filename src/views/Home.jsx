@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <section id="home">
-            <div className="flex items-center bg-[#242424] font-josefin w-full mx-auto pt-36 ps-44 xl:pb-52 pe-12">
+            <div className="flex text-center lg:items-center bg-[#242424] font-josefin w-full mx-auto pt-8 lg:pt-36 lg:ps-44 lg:pb-52 pe-12 pb-36">
                 
                 {/* cta text  */}
                 <Fade 
@@ -44,7 +44,7 @@ const Home = () => {
                     </p>
 
                 {/* buttons */}
-                <div className='mt-6 flex'>
+                <div className='lg:flex lg:mt-6 pt-4'>
 
                     {/* project button  */}
                     <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white mr-4 hover:bg-[#FFAE00]'>Projects</button>
