@@ -20,7 +20,7 @@ const About = () => {
                 {/* About me text */}
                 
                 <div className="px-16 lg:w-3/4 sm:text-center lg:text-left sm:px-0 ms-0 lg:ms-12 xl:pe-24 lg:ps-18">
-                    <p className="text-center text-[#FFAE00] text-[24px] font-normal underline underline-offset-4">
+                    <p className="text-center lg:text-left mt-10 text-[#FFAE00] text-[24px] font-normal underline underline-offset-4">
                         About Me
                     </p>
 
@@ -65,7 +65,7 @@ const About = () => {
                 hidden: { opacity: 1, y:80}
             }}
             key={tech.id} 
-            className="flex justify-center text-3xl items-center w-[450px] h-20 rounded-[15px]  gap-3 bg-[#242424]">
+            className="flex justify-center text-3xl items-center w-[300px] lg:w-[450px] h-20 rounded-[15px]  gap-3 bg-[#242424]">
             <img
               src={tech.url}
               alt={tech.name}
