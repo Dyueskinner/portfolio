@@ -14,7 +14,7 @@ const Home = () => {
                 duration={1500}
                 direction='left'
                 >
-                <div className=' sm:text-center lg:text-left px-6 sm:px-0 lg:ps-20 lg:pe-12 '>
+                <div className=' sm:text-center md:text-center md:ps-36 lg:text-left px-6 sm:px-0 lg:ps-20 lg:pe-12 '>
                     <p className=" text-white text-[24px] font-normal">
                         Hey there,
                     </p>
