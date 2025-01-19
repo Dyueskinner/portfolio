@@ -28,7 +28,60 @@ export const techStack = [
 ]
 
 export const projects = [
-    {id:"1", title:"Portfolio", description:"This project was built using React", image:Image, link:"https://dyueskinner.vercel.app"},
-    {id:"2", title:"Test", description:"Test Description", image:""},
-    {id:"3", title:"Test", description:"Test Description", image:""},
+    //project card 1
+    {
+        id:"1", 
+        image:Image,
+        title:"Portfolio", 
+        description:"This project was built using React",
+        // tech:"React",
+        techUsed:[
+            "React",
+            "Tailwind CSS",
+            "Figma"
+        ], 
+        websitelink:"https://dyueskinner.vercel.app",
+        sourceLink:"",
+    },
+
+    //project card 2
+    {
+        id:"2",
+        image:"",
+        title:"Test",
+        description:"Test Description",
+        techUsed:[],
+        websitelink:"",
+        sourceLink:"",
+    },
+
+    //project card 3
+    {
+        id:"3",
+        image:"",
+        title:"Test",
+        description:"Test Description",
+        techUsed:[],
+        websitelink:"",
+        sourceLink:"",
+    },
 ]
+
+// export const techUsed = [
+//     {id:"1", name:"React"},
+//     {id:"2", name:"Tailwind CSS"},
+//     {id:"3", name:"Figma"},
+//     {id:"4", name:"Vercel"},
+//     {id:"5", name:"Node.js"},
+//     {id:"6", name:"MongoDB"},
+//     {id:"7", name:"Next.js"},
+//     {id:"8", name:"Bootstrap 5"},
+//     {id:"9", name:"PHP"},
+//     {id:"10", name:"MySQL"},
+//     {id:"11", name:"WordPress"},
+//     {id:"12", name:"C#"},
+//     {id:"13", name:".NET"},
+//     {id:"14", name:"Git"},
+//     {id:"15", name:"GitHub"},
+    
+// ]
