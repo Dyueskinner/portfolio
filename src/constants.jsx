@@ -40,7 +40,7 @@ export const projects = [
             "Figma"
         ], 
         websitelink:"https://dyueskinner.vercel.app",
-        sourceLink:"",
+        sourceLink:"https://github.com/Dyueskinner/portfolio",
     },
 
     //project card 2
@@ -50,7 +50,7 @@ export const projects = [
         title:"Test",
         description:"Test Description",
         techUsed:[],
-        websitelink:"",
+        websiteLink:"",
         sourceLink:"",
     },
 
@@ -61,7 +61,7 @@ export const projects = [
         title:"Test",
         description:"Test Description",
         techUsed:[],
-        websitelink:"",
+        websiteLink:"",
         sourceLink:"",
     },
 ]
