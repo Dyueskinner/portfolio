@@ -33,8 +33,7 @@ export const projects = [
         id:"1", 
         image:Image,
         title:"Portfolio", 
-        description:"This project was built using React",
-        // tech:"React",
+        description:"My Portfolio was designed and developed by me using React and Tailwind CSS. I used Figma to design the layout and components. The website is hosted on Vercel.",
         techUsed:[
             "React",
             "Tailwind CSS",

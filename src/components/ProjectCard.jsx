@@ -8,21 +8,22 @@ const ProjectCard = () => {
             {projects.map((project) => (
                 <div 
                 key={project.id}
-                className="bg-[#1A1A1A] h-[460px] w-[400px] mb-5 rounded-lg text-center p-4"
+                className="bg-[#1A1A1A] h-[550px] w-[400px] mb-5 rounded-lg text-center p-4"
                 >
                     <img 
                     className="rounded-lg"
                     src={project.image} 
                     alt={project.title}
                     />
-                    <p className="pt-3 text-lg text-white underline">{project.title}</p>
-                    <p className="text-white">{project.description}</p>
+                    <p className="pt-3 text-lg text-[#FFAE00] underline">{project.title}</p>
+                    <p className="text-white px-4">{project.description}</p>
 
                     <div className="pt-5 mb-1">
-                        <p className="text-white">Technology used:</p>
+                        <p className="text-white underline">Technology used:</p>
                     </div>
-                    
-                    <div className="flex justify-center gap-2 flex-wrap">
+
+                    {/* technology used */}
+                    <div className="flex justify-center gap-2 flex-wrap mb-2">
                        {project.techUsed.map((tech, index) => (
                         <span key={index} className="bg-black text-white rounded-lg p-1 px-3">{tech}</span>
                        ))}
@@ -30,8 +31,8 @@ const ProjectCard = () => {
                
                 
                 {/* button group */}
-                <div className="flex justify-center pt-1 mt-1">
-                    <button className="flex border border-[#FFAE00] rounded-lg px-3 p-1 text-white hover:bg-[#FFAE00] me-2">
+                <div className="flex justify-center pt-1 mt-1 gap-2">
+                    <button className="flex border border-[#FFAE00] rounded-lg px-3 p-1 text-white hover:bg-[#FFAE00]">
                         <img className="me-1" src="" alt="" />
                         <a href={project.link}>Website</a>
                             </button>
