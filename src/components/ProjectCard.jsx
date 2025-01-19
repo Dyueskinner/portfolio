@@ -4,7 +4,7 @@ import { projects } from "../constants"
 
 const ProjectCard = () => {
     return (
-        <div className="grid grid-cols-1 grid-rows-1 justify-center ps-12 pt-5">
+        <div className="grid grid-cols-1 grid-rows-1 justify-center pt-5">
             {projects.map((project) => (
                 <div 
                 key={project.id}
@@ -33,10 +33,11 @@ const ProjectCard = () => {
                 {/* button group */}
                 <div className="flex justify-center pt-1 mt-1 gap-2">
                     <button className="flex border border-[#FFAE00] rounded-lg px-3 p-1 text-white hover:bg-[#FFAE00]">
-                        <img className="me-1" src="" alt="" />
-                        <a href={project.link}>Website</a>
+                        <a href={project.websiteLink}>Website</a>
                             </button>
-                    <button className="flex border border-[#FFAE00] rounded-lg px-3 p-1 text-white hover:bg-[#FFAE00]">Source</button>
+                    <button className="flex border border-[#FFAE00] rounded-lg px-3 p-1 text-white hover:bg-[#FFAE00]">
+                        <a href={project.sourceLink}>Source</a>
+                        </button>
                 </div>
                 </div>
             ))}
