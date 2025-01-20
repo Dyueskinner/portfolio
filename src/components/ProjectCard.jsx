@@ -18,7 +18,7 @@ const ProjectCard = () => {
                     <p className="text-white px-4">{project.description}</p>
 
                     <div className="pt-5 mb-1">
-                        <p className="text-[#FFAE00] underline">Technology used:</p>
+                        <p className="text-[#FFAE00] underline mb-2">Technology used:</p>
                     </div>
 
                     {/* technology used */}
