@@ -11,7 +11,7 @@ const ProjectCard = () => {
                 className="bg-[#1A1A1A] h-[550px] w-[400px] mb-5 rounded-lg text-center p-4">
                 <p className="mb-3 font-bold text-lg text-[#FFAE00] underline">{project.title}</p>
                     <img 
-                    className="rounded-lg"
+                    className="rounded-lg mb-3 border border-[#FFAE00]"
                     src={project.image} 
                     alt={project.title}
                     />
