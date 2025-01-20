@@ -8,14 +8,13 @@ const ProjectCard = () => {
             {projects.map((project) => (
                 <div 
                 key={project.id}
-                className="bg-[#1A1A1A] h-[550px] w-[400px] mb-5 rounded-lg text-center p-4"
-                >
+                className="bg-[#1A1A1A] h-[550px] w-[400px] mb-5 rounded-lg text-center p-4">
+                <p className="mb-3 font-bold text-lg text-[#FFAE00] underline">{project.title}</p>
                     <img 
                     className="rounded-lg"
                     src={project.image} 
                     alt={project.title}
                     />
-                    <p className="pt-3 text-lg text-[#FFAE00] underline">{project.title}</p>
                     <p className="text-white px-4">{project.description}</p>
 
                     <div className="pt-5 mb-1">
