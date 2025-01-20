@@ -47,11 +47,17 @@ export const projects = [
     {
         id:"2",
         image:"",
-        title:"Test",
-        description:"Test Description",
-        techUsed:[],
+        title:"Timesheet Portal",
+        description:"This project was a group project I collaborated on for a Hackathon. The project was developed using React, Node.js, MongoDB and Express.",
+        techUsed:[
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Express",
+            "Material UI"
+        ],
         websiteLink:"",
-        sourceLink:"",
+        sourceLink:"https://github.com/Dyueskinner/hackathonTimesheet",
     },
 
     //project card 3
@@ -66,21 +72,3 @@ export const projects = [
     },
 ]
 
-// export const techUsed = [
-//     {id:"1", name:"React"},
-//     {id:"2", name:"Tailwind CSS"},
-//     {id:"3", name:"Figma"},
-//     {id:"4", name:"Vercel"},
-//     {id:"5", name:"Node.js"},
-//     {id:"6", name:"MongoDB"},
-//     {id:"7", name:"Next.js"},
-//     {id:"8", name:"Bootstrap 5"},
-//     {id:"9", name:"PHP"},
-//     {id:"10", name:"MySQL"},
-//     {id:"11", name:"WordPress"},
-//     {id:"12", name:"C#"},
-//     {id:"13", name:".NET"},
-//     {id:"14", name:"Git"},
-//     {id:"15", name:"GitHub"},
-    
-// ]
