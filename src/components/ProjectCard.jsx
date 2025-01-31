@@ -4,7 +4,7 @@ import { projects } from "../constants"
 
 const ProjectCard = () => {
     return (
-        <div className="grid grid-cols-1 grid-rows-1 justify-center pt-5">
+        <div className="grid grid-cols-1 grid-rows-1 justify-center pt-5 lg:grid-cols-3 gap-10">
             {projects.map((project) => (
                 <div 
                 key={project.id}
