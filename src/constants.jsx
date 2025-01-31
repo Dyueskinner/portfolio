@@ -46,7 +46,7 @@ export const projects = [
     //project card 2
     {
         id:"2",
-        image:"",
+        image:Image,
         title:"Timesheet Portal",
         description:"This project was a group project I collaborated on for a Hackathon. The project was developed using React, Node.js, MongoDB and Express.",
         techUsed:[
@@ -63,7 +63,7 @@ export const projects = [
     //project card 3
     {
         id:"3",
-        image:"",
+        image:Image,
         title:"Test",
         description:"Test Description",
         techUsed:[],
