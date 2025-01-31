@@ -64,11 +64,16 @@ export const projects = [
     {
         id:"3",
         image:Image,
-        title:"Test",
+        title:"Lil Chef Spence",
         description:"Test Description",
-        techUsed:[],
+        techUsed:[
+            "React",
+            "Next.js",
+            "MongoDB",
+            "Figma"
+        ],
         websiteLink:"",
-        sourceLink:"",
+        sourceLink:"https://github.com/Dyueskinner/lilchefspence",
     },
 ]
 
