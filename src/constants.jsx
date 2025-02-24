@@ -25,6 +25,7 @@ export const techStack = [
     {id: "15", name: ".NET", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/dot-net/dot-net-plain-wordmark.svg"},
     {id: "16", name: "Git", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original.svg"},
     {id: "17", name: "GitHub", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/github/github-original-wordmark.svg"},
+    {id: "18", name: "Docker", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/docker/docker-plain-wordmark.svg"},
 ]
 
 export const projects = [
