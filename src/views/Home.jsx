@@ -2,6 +2,8 @@ import { TypeAnimation } from 'react-type-animation'
 import SamplePicture from '../assets/sample_image.jpg';
 import { socialLinks } from '../constants'
 import { Fade } from 'react-awesome-reveal'
+import DownloadIcon from '@mui/icons-material/Download';
+import { Download } from '@mui/icons-material';
 
 const Home = () => {
     return (
@@ -50,7 +52,10 @@ const Home = () => {
                     <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white mr-4 hover:bg-[#FFAE00]'>Projects</button>
 
                     {/* resume button  */}
-                    <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white hover:bg-[#FFAE00]'>Resume</button>
+                    <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white hover:bg-[#FFAE00]'>
+                        <DownloadIcon />
+                        <a href='Resume.pdf' download="Resume.pdf"> Resume</a>
+                        </button>
                 </div>
             </div>
             </Fade>
