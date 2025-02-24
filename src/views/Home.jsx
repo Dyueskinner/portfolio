@@ -3,7 +3,6 @@ import SamplePicture from '../assets/sample_image.jpg';
 import { socialLinks } from '../constants'
 import { Fade } from 'react-awesome-reveal'
 import DownloadIcon from '@mui/icons-material/Download';
-import { Download } from '@mui/icons-material';
 
 const Home = () => {
     return (

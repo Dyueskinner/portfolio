@@ -1,5 +1,7 @@
 import { projects } from "../constants"
-
+import PublicIcon from '@mui/icons-material/Public';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { Public } from "@mui/icons-material";
 
 
 const ProjectCard = () => {
@@ -32,10 +34,11 @@ const ProjectCard = () => {
                 {/* button group */}
                 <div className="flex justify-center pt-1 mt-1 gap-2">
                     <button className="flex border border-[#FFAE00] rounded-lg px-3 p-1 text-white hover:bg-[#FFAE00]">
-                        <a href={project.websiteLink}>Website</a>
+                        
+                        <a href={project.websiteLink}><PublicIcon /> Website</a>
                             </button>
                     <button className="flex border border-[#FFAE00] rounded-lg px-3 p-1 text-white hover:bg-[#FFAE00]">
-                        <a href={project.sourceLink}>Source</a>
+                        <a href={project.sourceLink}><GitHubIcon /> Source</a>
                         </button>
                 </div>
                 </div>
