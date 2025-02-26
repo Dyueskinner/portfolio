@@ -47,7 +47,7 @@ const About = () => {
         <div>
             <p className='text-[24px] text-center lg:text-center text-[#FFAE00] underline underline-offset-4 font-josefin bg-[#1a1a1a]  pb-4 xl:pt-5'>
                 Tools and Technologies 
-            <p className='text-[#FFAE00] lg:text-start lg:ps-64 underline'>Coding Languages:</p>
+            <p className='text-[#FFAE00] pt-4 underline'>Coding Languages:</p>
             </p>
         </div>
     {/* tech stack links */}
@@ -83,71 +83,80 @@ const About = () => {
         </div>
             </div>
 
-        {/* framework stack links */}
-        <div>
-            {/* <p className='text-[#FFAE00] lg:text-start lg:ps-64 underline'>Frameworks and Libraries:</p> */}
-        </div>
-        <div className='flex bg-[#1a1a1a] items-center justify-center '>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin  text-center lg:pb-10">
+        {/* Frameworks section */}
+<div className="bg-[#1a1a1a] pb-4">
+    <p className="text-[#FFAE00] text-center underline text-[24px] pt-4">
+        Frameworks and Libraries:
+    </p>
+</div>
+
+<div className='flex bg-[#1a1a1a] items-center justify-center '>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin text-center lg:pb-10">
         {frameworkStack.map((framework) => (
             <motion.div 
-            initial="hidden"
-            whileInView={"visible"}
-            variants={{
-                visible: {
-                    y: 0,
-                    opacity: 1,
-                    transition: {
-                        type: "spring",
+                initial="hidden"
+                whileInView={"visible"}
+                variants={{
+                    visible: {
+                        y: 0,
+                        opacity: 1,
+                        transition: {
+                            type: "spring",
+                        },
                     },
-                },
-                hidden: { opacity: 1, y:80}
-            }}
-            key={framework.id} 
-            className="flex justify-center text-3xl items-center w-[300px] lg:w-[450px] h-20 rounded-[15px]  gap-3 bg-[#242424]">
-            <img
-              src={framework.url}
-              alt={framework.name}
-              className="w-12 h-12 object-contain"
-              />
-            <p className="text-white text-xl">{framework.name}</p>
-          </motion.div>
-            ))}
-        </div>
-        </div>
+                    hidden: { opacity: 1, y:80 }
+                }}
+                key={framework.id} 
+                className="flex justify-center text-3xl items-center w-[300px] lg:w-[450px] h-20 rounded-[15px] gap-3 bg-[#242424]"
+            >
+                <img
+                    src={framework.url}
+                    alt={framework.name}
+                    className="w-12 h-12 object-contain"
+                />
+                <p className="text-white text-xl">{framework.name}</p>
+            </motion.div>
+        ))}
+    </div>
+</div>
 
-        {/* tool stack links */}
-        <div>
-            {/* <p className='text-[#FFAE00] lg:text-start lg:ps-64 underline'>Frameworks and Libraries:</p> */}
-        </div>
-        <div className='flex bg-[#1a1a1a] items-center justify-center '>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin  text-center lg:pb-10">
+{/* Tools section */}
+<div className="bg-[#1a1a1a] pb-4">
+    <p className="text-[#FFAE00] text-center underline text-[24px] pt-4">
+        Tools:
+    </p>
+</div>
+
+<div className='flex bg-[#1a1a1a] items-center justify-center '>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin text-center lg:pb-10">
         {toolStack.map((tool) => (
             <motion.div 
-            initial="hidden"
-            whileInView={"visible"}
-            variants={{
-                visible: {
-                    y: 0,
-                    opacity: 1,
-                    transition: {
-                        type: "spring",
+                initial="hidden"
+                whileInView={"visible"}
+                variants={{
+                    visible: {
+                        y: 0,
+                        opacity: 1,
+                        transition: {
+                            type: "spring",
+                        },
                     },
-                },
-                hidden: { opacity: 1, y:80}
-            }}
-            key={tool.id} 
-            className="flex justify-center text-3xl items-center w-[300px] lg:w-[450px] h-20 rounded-[15px]  gap-3 bg-[#242424]">
-            <img
-              src={tool.url}
-              alt={tool.name}
-              className="w-12 h-12 object-contain"
-              />
-            <p className="text-white text-xl">{tool.name}</p>
-          </motion.div>
-            ))}
-        </div>
-        </div>
+                    hidden: { opacity: 1, y:80 }
+                }}
+                key={tool.id} 
+                className="flex justify-center text-3xl items-center w-[300px] lg:w-[450px] h-20 rounded-[15px] gap-3 bg-[#242424]"
+            >
+                <img
+                    src={tool.url}
+                    alt={tool.name}
+                    className="w-12 h-12 object-contain"
+                />
+                <p className="text-white text-xl">{tool.name}</p>
+            </motion.div>
+        ))}
+    </div>
+</div>
+
         </section>
         </>
     );
