@@ -1,5 +1,7 @@
 import SamplePicture from '../assets/sample_image.jpg'
-import { techStack } from '../constants';
+import { languageStack } from '../constants';
+import { frameworkStack } from '../constants';
+import { toolStack } from '../constants';
 import { motion } from 'framer-motion';
 // import { Fade } from 'react-awesome-reveal';
 
@@ -45,12 +47,15 @@ const About = () => {
         <div>
             <p className='text-[24px] text-center lg:text-center text-[#FFAE00] underline underline-offset-4 font-josefin bg-[#1a1a1a]  pb-4 xl:pt-5'>
                 Tools and Technologies 
+            <p className='text-[#FFAE00] lg:text-start lg:ps-64 underline'>Coding Languages:</p>
             </p>
         </div>
     {/* tech stack links */}
+    <div>
+
     <div className='flex bg-[#1a1a1a] items-center justify-center '>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin  text-center lg:pb-10">
-        {techStack.map((tech) => (
+        {languageStack.map((language) => (
             <motion.div 
             initial="hidden"
             whileInView={"visible"}
@@ -64,16 +69,83 @@ const About = () => {
                 },
                 hidden: { opacity: 1, y:80}
             }}
-            key={tech.id} 
+            key={language.id} 
             className="flex justify-center text-3xl items-center w-[300px] lg:w-[450px] h-20 rounded-[15px]  gap-3 bg-[#242424]">
             <img
-              src={tech.url}
-              alt={tech.name}
+              src={language.url}
+              alt={language.name}
               className="w-12 h-12 object-contain"
               />
-            <p className="text-white text-xl">{tech.name}</p>
+            <p className="text-white text-xl">{language.name}</p>
           </motion.div>
-            ))};
+            ))}
+        </div>
+        </div>
+            </div>
+
+        {/* framework stack links */}
+        <div>
+            {/* <p className='text-[#FFAE00] lg:text-start lg:ps-64 underline'>Frameworks and Libraries:</p> */}
+        </div>
+        <div className='flex bg-[#1a1a1a] items-center justify-center '>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin  text-center lg:pb-10">
+        {frameworkStack.map((framework) => (
+            <motion.div 
+            initial="hidden"
+            whileInView={"visible"}
+            variants={{
+                visible: {
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                        type: "spring",
+                    },
+                },
+                hidden: { opacity: 1, y:80}
+            }}
+            key={framework.id} 
+            className="flex justify-center text-3xl items-center w-[300px] lg:w-[450px] h-20 rounded-[15px]  gap-3 bg-[#242424]">
+            <img
+              src={framework.url}
+              alt={framework.name}
+              className="w-12 h-12 object-contain"
+              />
+            <p className="text-white text-xl">{framework.name}</p>
+          </motion.div>
+            ))}
+        </div>
+        </div>
+
+        {/* tool stack links */}
+        <div>
+            {/* <p className='text-[#FFAE00] lg:text-start lg:ps-64 underline'>Frameworks and Libraries:</p> */}
+        </div>
+        <div className='flex bg-[#1a1a1a] items-center justify-center '>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin  text-center lg:pb-10">
+        {toolStack.map((tool) => (
+            <motion.div 
+            initial="hidden"
+            whileInView={"visible"}
+            variants={{
+                visible: {
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                        type: "spring",
+                    },
+                },
+                hidden: { opacity: 1, y:80}
+            }}
+            key={tool.id} 
+            className="flex justify-center text-3xl items-center w-[300px] lg:w-[450px] h-20 rounded-[15px]  gap-3 bg-[#242424]">
+            <img
+              src={tool.url}
+              alt={tool.name}
+              className="w-12 h-12 object-contain"
+              />
+            <p className="text-white text-xl">{tool.name}</p>
+          </motion.div>
+            ))}
         </div>
         </div>
         </section>
