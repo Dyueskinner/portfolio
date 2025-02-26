@@ -1,7 +1,6 @@
 import { projects } from "../constants"
 import PublicIcon from '@mui/icons-material/Public';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Public } from "@mui/icons-material";
 
 
 const ProjectCard = () => {
