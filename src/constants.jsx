@@ -1,8 +1,8 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GithubIcon from '@mui/icons-material/GitHub'
 import Image from './assets/sample_image.jpg'
-import PortfolioSC from '/public/portfolioSC.png'
-import LilChefSpenceSC from '/public/lilchefspenceSC.png'
+import PortfolioSC from '../public/portfolioSC.png'
+import LilChefSpenceSC from '../public/lilchefspenceSC.png'
 
 export const socialLinks = [
     {name: "LinkedIn", Icon: LinkedInIcon, link:"https://www.linkedin.com/in/dyueskinner",},
