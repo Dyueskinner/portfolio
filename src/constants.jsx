@@ -1,6 +1,8 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GithubIcon from '@mui/icons-material/GitHub'
 import Image from './assets/sample_image.jpg'
+import PortfolioSC from './assets/portfolioSC.png'
+import LilChefSpenceSC from './assets/lilchefspenceSC.png'
 
 export const socialLinks = [
     {name: "LinkedIn", Icon: LinkedInIcon, link:"https://www.linkedin.com/in/dyueskinner",},
@@ -32,8 +34,8 @@ export const projects = [
     //project card 1
     {
         id:"1", 
-        image:Image,
-        title:"Portfolio", 
+        image:PortfolioSC,
+        title:"Portfolio (WIP)", 
         description:"My Portfolio was designed and developed by me using React and Tailwind CSS. I used Figma to design the layout and components. The website is hosted on Vercel.",
         techUsed:[
             "React",
@@ -64,9 +66,9 @@ export const projects = [
     //project card 3
     {
         id:"3",
-        image:Image,
-        title:"Lil Chef Spence",
-        description:"Test Description",
+        image:LilChefSpenceSC,
+        title:"Lil Chef Spence (WIP)",
+        description:"This project was created for a friend who wanted a website for his meal prepping business. It was created using React, Next.js and MongoDB.",
         techUsed:[
             "React",
             "Next.js",
