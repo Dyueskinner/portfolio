@@ -3,6 +3,7 @@ import SamplePicture from '../assets/sample_image.jpg';
 import { socialLinks } from '../constants'
 import { Fade } from 'react-awesome-reveal'
 import DownloadIcon from '@mui/icons-material/Download';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
@@ -48,7 +49,10 @@ const Home = () => {
                 <div className='lg:flex lg:mt-6 pt-4'>
 
                     {/* project button  */}
-                    <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white mr-4 hover:bg-[#FFAE00]'>Projects</button>
+                    <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white mr-4 hover:bg-[#FFAE00]'>
+                        <Link to='project' smooth={true} duration={1000}>Projects
+                        </Link>
+                        </button>
 
                     {/* resume button  */}
                     <button className='rounded-full border-solid border-2 border-[#FFAE00] px-7 py-2 font-bold text-white hover:bg-[#FFAE00]'>
