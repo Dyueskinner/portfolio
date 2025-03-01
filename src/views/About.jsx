@@ -9,7 +9,7 @@ const About = () => {
     return (
         <>
         <section id="about">
-            <div className="flex items-center bg-[#1A1A1A] font-josefin lg:pt-24 lg:ps-8 xl:ps-40 ">
+            <div className="flex items-center bg-[#1A1A1A] font-josefin lg:pt-24 lg:ps-8 xl:ps-40">
                 {/* About image */}
                 <div className="hidden lg:flex justify-center xl:pe-0 mt-6 ">
                     <img 
@@ -127,7 +127,7 @@ const About = () => {
     </p>
 </div>
 
-<div className='flex bg-[#1a1a1a] items-center justify-center '>
+<div className='flex bg-[#1a1a1a] items-center justify-center pb-6'>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#1a1a1a] font-josefin text-center lg:pb-10">
         {toolStack.map((tool) => (
             <motion.div 
