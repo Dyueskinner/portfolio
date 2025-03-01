@@ -15,8 +15,9 @@ export const languageStack = [
     {id: "3", name: "JavaScript", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/javascript/javascript-original.svg"},
     {id: "4", name: "PHP", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/php/php-original.svg"},
     {id: "5", name: "C#", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/csharp/csharp-original.svg"},
-    // change image to java icon
     {id: "6", name: "Java", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/java/java-original.svg"},
+    //change image to sql
+    {id: "7", name: "SQL", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/java/java-original.svg"},
 ]
 
 export const frameworkStack = [
@@ -29,6 +30,8 @@ export const frameworkStack = [
     {id: "7", name: "MongoDB", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/mongodb/mongodb-original-wordmark.svg"},
     {id: "8", name: "WordPress", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/wordpress/wordpress-original.svg"},
     {id: "9", name: "MySQL", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/mysql/mysql-original-wordmark.svg"},
+    //change image to post
+    {id: "10", name: "PostgreSQL", url: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/mysql/mysql-original-wordmark.svg"},
     
 ]
 
