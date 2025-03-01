@@ -9,7 +9,7 @@ const About = () => {
     return (
         <>
         <section id="about">
-            <div className="flex items-center bg-[#1A1A1A] font-josefin lg:pt-24 lg:ps-8 xl:ps-40">
+            <div className="flex items-center bg-[#1A1A1A] font-josefin text-center lg:pt-24 lg:ps-8 xl:ps-40">
                 {/* About image */}
                 <div className="hidden lg:flex justify-center xl:pe-0 mt-6 ">
                     <img 
