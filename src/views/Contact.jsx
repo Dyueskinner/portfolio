@@ -1,3 +1,6 @@
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GithubIcon from '@mui/icons-material/GitHub'
+import EmailIcon from '@mui/icons-material/Email';
 
 
 const Contact = () => {
@@ -11,15 +14,20 @@ const Contact = () => {
                 <p className="text-white text-center pb-10">
                     Dominique Yue-Skinner
                     <br />
-                    <a className="underline text-[#FFAE00] hover:text-white" href="mailto:dyueskinner@gmail.com">dyueskinner@gmail.com</a>
-                    <br />
-                    782-446-7022
-                    <br />
-                    <a className="underline text-[#FFAE00] hover:text-white" href="https://www.linkedin.com/in/dyueskinner">LinkedIn Profile</a>
+                    <p>dyueskinner@gmail.com</p>
+                    <p>782-446-7022</p>
+
+                    {/* Links  */}
+                    <div className=''>
+                    <a className="text-[#FFAE00] hover:text-white pe-1" href="https://www.linkedin.com/in/dyueskinner"><LinkedInIcon /></a>
+                    <a className="text-[#FFAE00] hover:text-white pe-1" href="https://www.github.com/dyueskinner"><GithubIcon /></a>
+                    <a className="text-[#FFAE00] hover:text-white" href="mailto:dyueskinner@gmail.com"><EmailIcon /></a>
+                    </div>
                 </p>
             </div>
 
-
+            
+           
             
         </section>
     );
