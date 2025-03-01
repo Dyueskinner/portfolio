@@ -87,5 +87,38 @@ export const projects = [
         websiteLink:"",
         sourceLink:"https://github.com/Dyueskinner/lilchefspence",
     },
+
+    // project card 4
+    {
+        id:"4",
+        image:Image,
+        title:"Watch World Forum (WIP)",
+        description:"This project was created in my Web Application Programming III where I created a watch discussion forum using C# in the ASP.NET framework.",
+        techUsed:[
+            "C#",
+            "ASP.NET",
+            "Razor",
+            "Bootstrap",
+            "SQL Server"
+        ],
+        websiteLink: "",
+        sourceLink:""
+    },
+
+    //project card 5
+    {
+        id:"5",
+        image:Image,
+        title:"Family Connect Prototype (WIP)",
+        description:"Family Connect is SaaS prototype collabartive project where families can stay connected through photos, family events, etc.",
+        techUsed: [
+            "React",
+            "Next.js",
+            "TailwindCSS",
+            "PostgreSQL"
+        ],
+        websiteLink:"",
+        sourceLink:""
+    }
 ]
 
